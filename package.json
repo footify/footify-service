@@ -5,8 +5,9 @@
   "main": "api/main.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon api/main.js",
-    "serve": "yarn && yarn start"
+    "start": "node api/main.js",
+    "start:dev": "nodemon api/main.js",
+    "serve": "yarn && yarn start:dev"
   },
   "repository": {
     "type": "git",
