@@ -1,0 +1,29 @@
+{
+  "name": "footify-social-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api/main.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon api/main.js",
+    "serve": "yarn && yarn start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guillaume-g/footify-social-service.git"
+  },
+  "author": "Guillaume Galas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guillaume-g/footify-social-service/issues"
+  },
+  "homepage": "https://github.com/guillaume-g/footify-social-service#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "jest": "^19.0.2",
+    "qrcode": "^0.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '6'
+
+scripts:
+  - yarn test
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: TMmAcGex004KxA/O3KfV1bxF1UCEly+T3WkFINXnaEX9fQAJwWnpVy+XiXtiawet/WtBlGI3jBiF2qYmmtt8bY59mCbs0ZeWxTpcec1Zwvv1F1jx/n3ObNG6YfzmDHqSOViN2TOoZ5YrTqrdmRtuy99zUFC0hMyS1uIR5TGB1MQm4/IeSO3TaKm0PILHOW4gSn1Acmm1OofknUtt/Pz35xI5CXV6vz3WCxjMJAu75N/suuR6QOsWkCSYA8977z+uWCr2pZmcVPQysiadyzHXuHT/9Hn1Y8S6ptlLiw88sm5MhgMuZ+h7DaAM3L8caiYL0Q1XItFM7xtslRI70o+hK8RpZPzmxZBlTJiIXYGTi9WnlB0NIL/9HGPcurwratYVY+r6Vc4p4i4UrGp20WgQrOg5f+XILmc7N7FftjtJCtU0l7VS8lHWDctsMnaRo5s315PFuLgCKwUmWCyerwvRq2I8pbW6zAXKJpxkgM7OToK2RgBNCVtp1GiooH/X72bCup8xs6fRfgmgT4tp0km19rVRWzhUOS8Y/KmrtQ1+Ti1V1UR+XBtK6rNbcdar+HYLsloOfWMchBQxYSNFAWFj5CWvSmamOulLi048rNA+dzhAkyUfEdfC28OKQuQ5b21CfKTm3rRIcW/FGJPxcvdQ3vohGila+uS+7gjRYHtaFPU=
+  app: footify-social-service
+  on:
+    repo: guillaume-g/footify-social-service
