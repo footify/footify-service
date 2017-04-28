@@ -22,5 +22,11 @@ function getRoutes(subPath) {
 }
 
 module.exports = {
-  getRoutes
+  getRoutes,
+  qrcode: {
+    api: {
+      createUrl: "https://api.qrserver.com/v1/create-qr-code/",
+      readUrl: "https://api.qrserver.com/v1/read-qr-code/"
+    }
+  }
 };
