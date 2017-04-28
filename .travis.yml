@@ -7,6 +7,6 @@ deploy:
   provider: heroku
   api_key:
     secure: RcL6uNqmsiT/EBq1du7/1TtRFWHZpKJxVIWWmjbNkdGv4rhB4SvLuEy2pWt6/HtwvoG7T3MwlDYTGu3UbQaHEf5gDEPWIEZ9dt6KrXiqAOrL8PBT7kUzPzfhpHyvoZY9c+1NC5zKNj5gQWXQZejVSFpb10XYUqMwzGOWnhY4tt2bVD82zOi9iYWtkQvcCsA1t7n8HGwEg6drFch8OtLCyvvorowo8jBq9PVj94zE9pULWgBchSE9uRXZKmsNpXSBAUG13Rj3hSPfBtbgBqYir6K9jh1LOu7e/AQ+2H9Lf5dLOTkSnLlH1njAWToH0XkJM9Une3veIzOdDAfJrL0nVgo98CF3DpTXdScFuKDhZf7ttlVbqMXOx/AxClE1o1LVWiPaU/fp8uNoYnBjml3BEBD4neYCr5NvLgqcCSdfKIetb/BMxIW5RuSxtaXpxV4CJqJZ8+KtH+vMx6gL6r1G1jyF1h/FtWtvBWjOSL1zHudQcqU9oNKnZAQndAXtdSuIKm9QyGOcGlbut9w8YyFArZWgnlLpglROsYVFkp696GSqXs/9IfUQ4TFHWVarr4+u2b/vuzRA57bFmCk+x4QJbuhEcxvK97CCLOqpvO6QyXE+rQR/9Nnv8CERb1QAwswmzyOUWp0NH6E6Vu62rY33vRy0XTlWrJ6od+yLeq58PwU=
-  app: footify-social-service
+  app: footify-service
   on:
-    repo: guillaume-g/footify-social-service
+    repo: guillaume-g/footify-service
