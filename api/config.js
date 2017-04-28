@@ -1,9 +1,24 @@
 const fs = require('fs');
+const path = require('path');
+const _ = require('lodash');
 
-function getRoutes() {
-  const elements = fs.readdirSync(".");
+const rootPath = __dirname;
 
-  return elements;
+function getRoutes(subPath) {
+  const pathToInspect = path.join(rootPath, subPath || "");
+
+  const routes = _.map(fs.readdirSync(pathToInspect), (pathFile) => {
+    if (fs.lstatSync(path.join(pathToInspect, pathFile)).isDirectory()) {
+      const extractedRoutes = getRoutes(pathFile);
+      return extractedRoutes;
+    } else if (/-routes.js$/.test(pathFile)) {
+      const extractedRoutes = require(path.join(pathToInspect, pathFile));
+      return extractedRoutes;
+    }
+    return null;
+  });
+
+  return _.chain(routes).flattenDeep().compact().value();
 }
 
 module.exports = {

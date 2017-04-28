@@ -1,5 +1,5 @@
 function create(req, res, next) {
-  console.log("Hey !!!");
+  res.send("hello biatch");
 }
 
 module.exports = {
