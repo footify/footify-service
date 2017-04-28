@@ -4,7 +4,6 @@ const config = require('./config');
 const router = require('./router');
 
 const routes = config.getRoutes();
-console.log(routes);
 
 // Create a new express app
 const app = express();
