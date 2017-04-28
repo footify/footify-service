@@ -6,7 +6,6 @@ function create(req, res, next) {
   const size = req.body.size || '250x250';
 
   //TODO: Check if bar and informations are true
-  console.log(process.env.SECRET_KEY);
   const token = jwt.sign(bar, process.env.SECRET_KEY, {
     noTimestamp: true
   });
